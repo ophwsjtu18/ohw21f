@@ -4,8 +4,11 @@
 ### open source hardware intoduction
 
 
-*Adiricaast*
+*Adiricast*
 
+|Alpha|Beat|Sigama|
+|:--|:---:|----:|
+|175|56|28.1|
 
 
 
