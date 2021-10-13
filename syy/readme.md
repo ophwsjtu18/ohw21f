@@ -8,6 +8,7 @@
 
 |Alpha|Beat|Sigama|
 |:--|:---:|----:|
+|HEIGHT|WEIGHT|BMI|
 |175|56|28.1|
 
 
