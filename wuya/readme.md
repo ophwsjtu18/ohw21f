@@ -12,4 +12,4 @@ Markdown
 | 2 | b | 456 |
 | 9 | @ | 43- |
 
-![A Picture](wuya/4k纯黑.png)
+![A Picture](/wuya/4k纯黑.png)
