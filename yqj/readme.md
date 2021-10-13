@@ -2,7 +2,7 @@
 
 ## Markdown language
 
-| Syntax | Description |
+| Info | Description |
 | ----------- | ----------- |
 | *Name* | yqj |
 | **Age** | 21 |
