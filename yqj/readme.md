@@ -2,8 +2,8 @@
 
 ## Markdown language
 
-| Name | yqj |
-| Age | 21 |
+| *Name* | yqj |
+| **Age** | 21 |
 |Gender | Male |
 
-![self-portrait](image.jpg)
+![self-portrait](https://github.com/ophwsjtu18/ohw21f/blob/main/yanzu.jpg)
