@@ -1,5 +1,9 @@
-# Assignment 10/13
-## OpenCV
+# Assignment
+
+## Assignment 10/13
+
+### OpenCV
+
 - File: `cow.py`
 - Command: `python3 cow.py`
 - Input
