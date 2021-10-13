@@ -2,14 +2,11 @@ import cv2
 
 cow = cv2.imread("cow.jpeg", 1)
 
-x = [i*50 for i in range(3)]
-y = [i*50 for i in range(3)]
-
 point = []
 
-for a in x:
-    for b in y:
-        point.append(([a, b],[a+50,b+50]))
+for x in range(3):
+    for y in range(3):
+        point.append(([x, y],[x+50, y+50]))
 
 color = (0, 255, 0)
 thickness = 3
@@ -21,3 +18,4 @@ for item in point:
 cv2.imshow('cow',cow)
 
 cv2.waitKey(0)
+cv2.destroyAllWindows()
