@@ -2,11 +2,14 @@ import cv2
 
 cow = cv2.imread("cow.jpeg", 1)
 
+x = [i*50 for i in range(3)]
+y = [i*50 for i in range(3)]
+
 point = []
 
-for x in range(3):
-    for y in range(3):
-        point.append(([x, y],[x+50, y+50]))
+for i in x:
+    for j in y:
+        point.append(([i, j], [i+50, j+50]))
 
 color = (0, 255, 0)
 thickness = 3
