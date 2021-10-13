@@ -14,7 +14,6 @@ thickness = 3
 for item in point:
     cow = cv2.rectangle(cow, item[0], item[1], color, thickness)
 
-
 cv2.imshow('cow',cow)
 
 cv2.waitKey(0)
