@@ -6,3 +6,8 @@ introduce github
 
 ### chapter 1.1 
 regsiter github  
+
+these are contributers so far :
+
+![sjtu_contributer_2021()
+
