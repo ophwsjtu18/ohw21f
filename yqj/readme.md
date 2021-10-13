@@ -2,6 +2,8 @@
 
 ## Markdown language
 
+| Syntax | Description |
+| ----------- | ----------- |
 | *Name* | yqj |
 | **Age** | 21 |
 | Gender | Male |
