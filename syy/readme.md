@@ -11,5 +11,5 @@
 |HEIGHT|WEIGHT|BMI|
 |175|56|28.1|
 
-
+![]https://github.com/ophwsjtu18/ohw21f/blob/main/syy/_MG_7174.JPG
 
