@@ -2,7 +2,7 @@
 
 ## Assignment 10/13
 
-### OpenCV Coding
+### OpenCV
 
 - File: `cow.py`
 - Command: `python3 cow.py`
