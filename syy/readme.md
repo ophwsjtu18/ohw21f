@@ -6,6 +6,9 @@
 
 *Adiricast*
 
+## 实现效果图
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/%E6%8D%95%E8%8E%B7.PNG)
+
 Code 
 ```python
 import cv2
@@ -22,6 +25,4 @@ cv2.imshow('image',img)
 
 
 
-## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/%E6%8D%95%E8%8E%B7.PNG)
 
