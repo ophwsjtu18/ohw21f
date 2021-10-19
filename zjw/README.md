@@ -24,3 +24,4 @@ cv2.imshow('image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![assignment_1](https://github.com/ophwsjtu18/ohw21f/blob/main/zjw/zjw.assets/%E4%BD%9C%E4%B8%9A1.png)
