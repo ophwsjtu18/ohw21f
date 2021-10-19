@@ -29,4 +29,4 @@ cv2.imwrite('pic211013.png',img)
 cv2.destroyAllWindows()
 ```
 ## result
-![](https://github.com/ophwsjtu18/ohw21f/blob/744cd8a7f8caa4b186cbb41e6211b343a316fc17/yqj/week5/bull.jpg)
+![](https://github.com/ophwsjtu18/ohw21f/blob/1be0577fc18520bbb17626fb453158e21b257bee/yqj/week5/pic211013.png)
