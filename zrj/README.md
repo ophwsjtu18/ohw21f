@@ -1,2 +1,2 @@
-# open sour hardware introduction
+# open yer hardware introduction
 ## halo github!
