@@ -18,8 +18,7 @@ Markdown
 
 ![A Picture](/wuya/4k纯黑.png)
 
-## 第二章
-作业
+## 第二章 作业
 
 ### 202111013
 ```python
