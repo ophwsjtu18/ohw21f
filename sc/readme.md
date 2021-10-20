@@ -14,4 +14,4 @@
 -|-|-
 3|2|1
 
-！[图片挂掉了](https://github.com/ophwsjtu18/ohw21f/blob/main/sc/54749110.jpg)
+![图片挂掉了](https://github.com/ophwsjtu18/ohw21f/blob/main/sc/54749110.jpg)
