@@ -17,4 +17,4 @@ cv2.destroyAllWindows()
 
 **Picture**
 
-![cow_with_rectangle](yzx/10.13/cow_rectangle.png)
+![cow_with_rectangle](https://github.com/ophwsjtu18/ohw21f/blob/d2b213f4f7844af74cb65c6895c9a5dd2493c94b/yzx/10.13/cow_rectangle.png)
