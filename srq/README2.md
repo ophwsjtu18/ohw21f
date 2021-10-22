@@ -22,3 +22,4 @@ while True:
         break
 cv.destoryAllWindows()
 ```
+![20211021203516.png](https://i.loli.net/2021/10/22/28R6Em7ao5hpZeT.png)
