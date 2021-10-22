@@ -1,0 +1,9 @@
+# environment
+.DS_Store
+.vscode/
+
+# test
+*.sh
+
+# share
+*.tar
