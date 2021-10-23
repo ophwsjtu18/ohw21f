@@ -30,3 +30,55 @@ cv2.destroyAllWindows()
 ```
 #### 效果图
 ![example](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/1-1.jpg?raw=true)
+
+
+## 2021.10.23 
+### HOMEWORK
+
+#### 1. 复现代码并画圆
+```python
+import cv2
+import numpy as np
+#mouse callback function
+def draw_circle(event,x,y,flags,param):
+    if event==cv2.EVENT_RBUTTONDBLCLK:
+        cv2.circle(img,(x,y),5,(0,0,255),3) # 创建图像与窗口并将窗口与回调函数绑定
+img=np.zeros((512,512,3),np.uint8)
+cv2.namedWindow('image')
+cv2.setMouseCallback('image',draw_circle)
+while(1):
+    cv2.imshow('image',img)
+    if cv2.waitKey(20)&0xFF==27:
+        break
+cv2.imwrite('1-3.jpg',img)  #自动保存
+cv2.destroyAllWindows()
+```
+#### 效果图
+![22](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/1-3.jpg?raw=true)
+
+
+#### 2. 在牛的图片上画实心圆
+```python
+import cv2
+import numpy as np
+def draw_circle(event,x,y,flags,param):
+    if event == cv2.EVENT_RBUTTONDBLCLK:
+        cv2.circle(img,(x,y),5,(0,0,255),-1)
+
+print('----Press ESC to quit----')
+img = cv2.imread("C:/Users/skywang/Desktop/1.jpeg")
+cv2.namedWindow('Image')
+cv2.setMouseCallback('Image',draw_circle)
+
+while(1):
+    cv2.imshow("Image",img)
+    if cv2.waitKey(20)&0xFF == 27:
+        break
+        
+cv2.imwrite('1-2.jpg',img)  #自动保存
+cv2.destroyAllWindows()
+```
+
+#### 效果图
+![22222222](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/1-2.jpg?raw=true)
+
