@@ -24,7 +24,7 @@ while True:
     a = cv.waitKey(10)
     if a == 27:
         break
-cv.destoryAllWindows()
+cv.destroyAllWindows()
 ```
 ![1dac4103a9fb296c18bdde23d5eb754.png](https://i.loli.net/2021/10/23/5CPHGcquVhBylbs.png)
 ## 在牛的图片基础上完成鼠标画圆
@@ -52,6 +52,6 @@ while True:
     cv.imshow("mouse_demo", str)
     if cv.waitKey(20)&0xFF ==27:
         break
-cv.destoryAllWindows()
+cv.destroyAllWindows()
 ```
 ![6949594a7fdf242b3b21725f16b37db.png](https://i.loli.net/2021/10/23/361T2rvM94WmAVS.png)
