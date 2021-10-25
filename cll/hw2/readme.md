@@ -1,5 +1,6 @@
 # HW2 for BE002
 Run `hw2.py`
+
 **Major Function:** 
 ```python
 def drawCircle(event,x,y,flags,param):
@@ -11,6 +12,7 @@ def drawCircle(event,x,y,flags,param):
 ```
 ## Task 1
 __Output__
+
 <img src="https://github.com/ophwsjtu18/ohw21f/blob/main/cll/hw2/Task1_hollowCircle.png" alt="Cow" align=center />
 
 ## Task 2
