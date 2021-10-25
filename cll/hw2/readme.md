@@ -11,7 +11,7 @@ def drawCircle(event,x,y,flags,param):
         cv2.circle(img,(x,y),radius,color,thickness)
 ```
 ## Task 1
-__Output__
+- __Output__
 
 <img src="https://github.com/ophwsjtu18/ohw21f/blob/main/cll/hw2/Task1_hollowCircle.png" alt="Cow" align=center />
 
