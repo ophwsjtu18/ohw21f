@@ -1,11 +1,7 @@
-# Assignments 10/13
-
-## chapter1
-### openCV intoduction
-
-
+# Assignments 10/20
 *Adiricast*
-
+## HOMEWORK 2
+### 1
 ## 实现效果图
 ![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/%E6%8D%95%E8%8E%B7.PNG)
 
