@@ -3,21 +3,29 @@
 ## HOMEWORK 2
 ### 1
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/%E6%8D%95%E8%8E%B7.PNG)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/10201.PNG)
 
 Code 
 ```python
 import cv2
 import numpy as np
-img=cv2.imread('R-C.jfif',cv2.IMREAD_UNCHANGED)
-linethick=3
-color=(0,255,0)
-for i in range(0,150,50):
- for j in range(0,150,50):
-  lt=(i,j)
-  rb=(i+50,j+50)
-  cv2.rectangle(img,lt,rb,color,linethick,4)
+
+def draw_circle(event,x,y,flags,param):
+  if event==cv2.EVENT_RBUTTONDBLCLK:
+    cv2.circle(img,(x,y),5,(0,0,255),3)
+
+img=np.zeros((512,512,3),np.uint8)
+cv2.namedWindow('image')
+cv2.setMouseCallback('image',draw_circle)
+
+while(1):
+  cv2.imshow('image',img)
+  if cv2.waitKey(20)&0xFF==27:
+       break
+cv2.destroyAllWindows()
+
 cv2.imshow('image',img)
+```
 
 
 
