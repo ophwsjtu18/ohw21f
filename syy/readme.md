@@ -27,7 +27,7 @@ cv2.destroyAllWindows()
 cv2.imshow('image',img)
 ```
 
-### 1
+### 2
 ## 实现效果图
 ![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/10202.PNG)
 
