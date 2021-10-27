@@ -23,6 +23,7 @@ cv2.destroyAllWindows()
 
 **Picture**
 
+![circle](https://github.com/ophwsjtu18/ohw21f/blob/1bfd8244e6671f05537c5ee040475548a3081ad4/yzx/10.20/circle.png)
 
 **Task 2**
 
@@ -48,3 +49,5 @@ cv2.destroyAllWindows()
 ```
 
 **Picture**
+
+![cow_circle](https://github.com/ophwsjtu18/ohw21f/blob/1bfd8244e6671f05537c5ee040475548a3081ad4/yzx/10.20/cow_circle.png)
