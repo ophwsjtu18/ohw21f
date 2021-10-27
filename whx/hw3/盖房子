@@ -1,0 +1,88 @@
+from mcpi.minecraft import Minecraft
+
+import time
+
+mc=Minecraft.create()
+
+pos=mc.player.getTilePos()
+
+print("player pos is",pos)
+
+
+def house(x,y,z,l,w,h):
+
+    for yy in range(h):
+    
+        for a in range(l):
+        
+            mc.setBlock(x+a,y+yy,z,5)
+            
+            mc.setBlock(x+a,y+yy,z+w-1,5)
+            
+        for a in range(w-1):
+        
+            mc.setBlock(x,y+yy,z+1+a,5)
+            
+            mc.setBlock(x+l-1,y+yy,z+1+a,5)
+            
+    for xx in range(l):
+    
+        for zz in range(w):
+        
+            mc.setBlock(x+xx,y,z+zz,1)
+            
+    for xx in range(l):
+    
+        for zz in range(w):
+        
+            mc.setBlock(x+xx,y+h-1,z+zz,20)
+            
+    mc.setBlock(x+l/2,y+1,z,0)
+    
+    mc.setBlock(x+l/2,y+2,z,0)
+    
+    mc.setBlock(x+l/2,y+3,z,0)
+    
+    for zz in range(2):
+    
+        for yy in range(2):
+        
+            mc.setBlock(x,y+h/2+yy-1,z+zz+w/2-1,20)
+            
+            mc.setBlock(x+1,y+yy+h/2-1,z+zz+w/2-1,0)
+            
+house(910,20,874,10,10,10)
+
+house(840,20,874,8,9,10)
+
+house(890,20,874,9,6,8)
+
+stayed_time=0
+
+while True:
+
+    print("stay_time"+str(stayed_time))
+    
+    time.sleep(0.5)
+    
+    pos=mc.player.getTilePos()
+    
+    mc.postToChat("please go to home x=58 y=6 z=-103 for 15s to fly")
+    
+    mc.postToChat("x:"+str(pos.x)+"y:"+str(pos.y)+"z:"+str(pos.z))
+    
+    if pos.x==58 and pos.z==-103 and pos.y==6:
+    
+        mc.postToChat("welcome home,count down"+str(30-stayed_time))
+        
+        stayed_time=stayed_time+1
+        
+        if stayed_time>=30:
+        
+            mc.player.setTilePos(58,26,-103)
+            
+            stayed_time=0
+            
+    else:
+    
+        stayed_time=0
