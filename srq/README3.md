@@ -122,4 +122,4 @@ while True:
         stayed_time=0
         
 ```
-![20211028202223.png](https://i.loli.net/2021/10/28/6dWBv3tkwVquZXz.png)
+![](https://s3.bmp.ovh/imgs/2021/10/17106994a5e39e62.png)
