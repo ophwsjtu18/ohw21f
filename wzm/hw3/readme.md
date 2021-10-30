@@ -1,7 +1,7 @@
 ## assignment 2021/10/27
 
 code
-```
+```python
 from mcpi.minecraft import Minecraft
 import time
 
