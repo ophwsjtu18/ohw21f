@@ -2,7 +2,7 @@
 
 ## 执行的代码
 
-```
+``` python
 import numpy as np  
 import cv2  
 img = cv2.imread('cow.jpg',1)  
