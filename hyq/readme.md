@@ -82,3 +82,74 @@ cv2.destroyAllWindows()
 #### 效果图
 ![22222222](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/1-2.jpg?raw=true)
 
+
+## 2021.10.30 
+### HOMEWORK
+
+####  HW1
+```python
+from mcpi.minecraft import Minecraft
+import time
+import mcpi.block as block
+
+mc=Minecraft.create()
+#mc.player.setTilePos(-84,-3,29)   #移动至平地
+
+##while 1:
+##    pos=mc.player.getTilePos()
+##    mc.postToChat("x:"+str(pos.x)+"y:"+str(pos.y)+"z:"+str(pos.z))
+##    time.sleep(0.5)
+
+pos=mc.player.getTilePos()
+for x in range(10):
+    for z in range(10):
+        mc.setBlock(pos.x+x,pos.y,pos.z+z,block.WOODEN_SLAB.id)
+        mc.setBlock(pos.x+x,pos.y+6,pos.z+z,block.GLASS.id)
+
+for x in range(12):
+    for y in range(7):
+        mc.setBlock(pos.x+x-1,pos.y+y,pos.z-1,block.DIAMOND_BLOCK.id)
+        mc.setBlock(pos.x+x-1,pos.y+y,pos.z+10,block.DIAMOND_BLOCK.id)
+        mc.setBlock(pos.x-1,pos.y+y,pos.z+x-1,block.DIAMOND_BLOCK.id)
+        mc.setBlock(pos.x+10,pos.y+y,pos.z+x-1,block.DIAMOND_BLOCK.id)
+for z in range(2):
+    for y in range(2):
+        mc.setBlock(pos.x-1,pos.y+y+2,pos.z+z+4,20)
+mc.setBlock(pos.x+5,pos.y+1,pos.z-1,0)
+mc.setBlock(pos.x+5,pos.y+2,pos.z-1,0)
+```
+
+####  HW2
+```python
+from mcpi.minecraft import Minecraft
+import mcpi.block as block
+
+def house(x0,y0,z0,L,W,H):
+    mc.player.setTilePos(x0+1,y0+1,z0+1)
+    for x in range(L):
+        for z in range(W):
+            mc.setBlock(x0+x,y0,z0+z,block.WOODEN_SLAB.id)
+            mc.setBlock(x0+x,y0+H,z0+z,block.GLASS.id)
+
+    for x in range(L+2):
+        for y in range(H+1):
+            mc.setBlock(x0+x-1,y0+y,z0-1,block.DIAMOND_BLOCK.id)
+            mc.setBlock(x0+x-1,y0+y,z0+W,block.DIAMOND_BLOCK.id)
+    for z in range(W+2):
+        for y in range(H+1):
+            mc.setBlock(x0-1,y0+y,z0+z-1,block.DIAMOND_BLOCK.id)
+            mc.setBlock(x0+L,y0+y,z0+z-1,block.DIAMOND_BLOCK.id)
+    for z in range(2):
+        for y in range(2):
+            mc.setBlock(x0-1,y0+y+int((H-1)/2),z0+z+int((W-1)/2),20)
+    mc.setBlock(x0+int((L-1)/2),y0+1,z0-1,0)
+    mc.setBlock(x0+int((L-1)/2),y0+2,z0-1,0)
+
+mc=Minecraft.create()
+for x in range(3):
+    msg_1=input("input the coordinate (use ',' to split) : ").split(',')
+    msg_2=input("input the length width height (use ',' to split) : ").split(',')
+    cord=[int(x) for x in msg_1]
+    size=[int(x) for x in msg_2]
+    house(cord[0],cord[1],cord[2],size[0],size[1],size[2])
+```
