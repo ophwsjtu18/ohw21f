@@ -118,6 +118,8 @@ for z in range(2):
 mc.setBlock(pos.x+5,pos.y+1,pos.z-1,0)
 mc.setBlock(pos.x+5,pos.y+2,pos.z-1,0)
 ```
+![1](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/4.png?raw=true)
+![2](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/3.png?raw=true)
 
 ####  HW2
 ```python
@@ -153,3 +155,5 @@ for x in range(3):
     size=[int(x) for x in msg_2]
     house(cord[0],cord[1],cord[2],size[0],size[1],size[2])
 ```
+![3](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/1.png?raw=true)
+![4](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/2.png?raw=true)
