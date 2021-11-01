@@ -41,5 +41,5 @@ house(x0, y0, z0, 10, 10, 6)
 for a in [1, 2, 3]:
     house(x0 + a*11, y0, z0, 10 - a, 10 - a, 8 - a)
 ```
-!(HW3_1)[https://github.com/ophwsjtu18/ohw21f/blob/main/zjw/zjw.assets/HW3_1.png]
-!(HW3_2)[https://github.com/ophwsjtu18/ohw21f/blob/main/zjw/zjw.assets/HW3_2.png]
+![HW3_1](https://github.com/ophwsjtu18/ohw21f/blob/main/zjw/zjw.assets/HW3_1.png)
+![HW3_2](https://github.com/ophwsjtu18/ohw21f/blob/main/zjw/zjw.assets/HW3_2.png)
