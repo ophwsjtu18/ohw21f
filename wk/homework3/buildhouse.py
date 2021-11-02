@@ -5,17 +5,6 @@ mc=Minecraft.create()
 pos=mc.player.getTilePos()
 print("player pos is",pos)
 
-# for i in range(10):
-#     for j in range(10):
-#         mc.setBlock(pos.x+i,pos.y-1,pos.z+j,5)
-# for y in range(10):
-#     for a in range(10):
-#         mc.setBlock(pos.x + a,pos.y + y,pos.z,5)
-#         mc.setBlock(pos.x + a,pos.y + y,pos.z+9, 5)
-#     for a in range(8):
-#         mc.setBlock(pos.x,pos.y + y,pos.z+1+a,5)
-#         mc.setBlock(pos.x+9,pos.y + y,pos.z+1+a,5)
-
 def buildHouse():
      for i in range(6):
          for j in range(10):
