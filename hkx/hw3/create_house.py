@@ -3,15 +3,15 @@ import mcpi.block as block
 
 
 class House():
-    x, y, z, w, l, h = 0, 0, 0, 0, 0, 0
+    x, y, z, l, w, h = 0, 0, 0, 0, 0, 0
 
-    def __init__(self, _x, _y, _z, _w, _l, _h):
+    def __init__(self, _x, _y, _z, _l, _w, _h):
         self.x = _x
         self.y = _y
         self.z = _z
+        self.l = _l
         self.w = _w
         self.h = _h
-        self.l = _l
 
     def create_roof(self):
         for dx in range(self.l+1):
