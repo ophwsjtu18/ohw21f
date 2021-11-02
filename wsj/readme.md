@@ -111,4 +111,4 @@ house(pos.x+45,pos.y,pos.z,9,9,17)
 
 ```
 ### 效果图
-
+![sdsdsd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/4.png)
