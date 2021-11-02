@@ -57,4 +57,4 @@ house(x0+20+25,y0,z0,20,20,12)
 
 ```
 ## result
-![]()
+![](https://github.com/ophwsjtu18/ohw21f/blob/219d11365bf2a6b5b0ccc69ac6bd375fc09e56ac/yqj/week7/%E8%A7%86%E8%A7%921.png)
