@@ -51,18 +51,3 @@ for i in range(3):
     w = random.randint(15,30)
     h = random.randint(7,12)
     house(pos.x + i*35, pos.y, pos.z,l,w,h)
-# stayed_time=0
-# while True:
-#     print("stay_time"+str(stayed_time))
-#     time.sleep(0.5)
-#     pos=mc.player.getTilePos()
-#     mc.postToChat("please go to home x=58 y=6 z=-103 for 15s to fly")
-#     mc.postToChat("x:"+str(pos.x)+"y:"+str(pos.y)+"z:"+str(pos.z))
-#     if pos.x==58 and pos.z==-103 and pos.y==6:
-#         mc.postToChat("welcome home,count down"+str(30-stayed_time))
-#         stayed_time=stayed_time+1
-#         if stayed_time>=30:
-#             mc.player.setTilePos(58,26,-103)
-#             stayed_time=0
-#     else:
-#         stayed_time=0
