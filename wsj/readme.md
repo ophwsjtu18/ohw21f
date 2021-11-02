@@ -30,4 +30,48 @@ for i in range(4,6):
         mc.setBlock(pos.x,pos.y+j,pos.z+i,20)
 ```
 ### 效果图
+![sdsd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/xiaoguotu.png)
+
+## 任务二、
+### 代码
+```python
+from mcpi.minecraft import Minecraft
+import time
+
+mc=Minecraft.create()
+pos=mc.player.getTilePos()
+print("player pos is",pos)
+
+print("请输入x0:")
+x0=int(input())
+print("请输入y0:")
+y0=int(input())
+print("请输入z0:")
+z0=int(input())
+print("请输入房屋长L:")
+L=int(input())
+print("请输入房屋宽W:")
+W=int(input())
+print("请输入房屋宽高:")
+H=int(input())
+def house(x0,y0,z0,L,W,H): 
+    for x in range(L):
+        for z in range(W):
+            mc.setBlock(x0+x,y0,z0+z,41)
+    for x in range(L):
+        for y in range(H):
+            mc.setBlock(x0+x,y0+y,z0,21)
+            mc.setBlock(x0+x,y0+y,z0+W-1,21)
+    for z in range(W):
+        for y in range(H):
+            mc.setBlock(x0,y0+y,z0+z,21)
+            mc.setBlock(x0+L-1,y0+y,z0+z,21)
+    for x in range(L):
+        for z in range(W):
+            mc.setBlock(x0+x,y0+H,z0+z,20)
+    
+            
+house(x0,y0,z0,L,W,H)
+```
+### 效果图
 
