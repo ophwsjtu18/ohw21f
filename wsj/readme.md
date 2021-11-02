@@ -74,4 +74,5 @@ def house(x0,y0,z0,L,W,H):
 house(x0,y0,z0,L,W,H)
 ```
 ### 效果图
-
+![sdsdsd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/2.png)
+![dsfdf](
