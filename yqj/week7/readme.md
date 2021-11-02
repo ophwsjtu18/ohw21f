@@ -58,3 +58,5 @@ house(x0+20+25,y0,z0,20,20,12)
 ```
 ## result
 ![](https://github.com/ophwsjtu18/ohw21f/blob/219d11365bf2a6b5b0ccc69ac6bd375fc09e56ac/yqj/week7/%E8%A7%86%E8%A7%921.png)
+![](https://github.com/ophwsjtu18/ohw21f/blob/bf527ef1a7369cf88f8c4533334a1293c0afe459/yqj/week7/%E8%A7%86%E8%A7%922.png)
+![](https://github.com/ophwsjtu18/ohw21f/blob/bf527ef1a7369cf88f8c4533334a1293c0afe459/yqj/week7/%E5%86%85%E8%A7%86%E5%9B%BE.png)
