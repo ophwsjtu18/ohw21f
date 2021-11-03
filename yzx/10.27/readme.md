@@ -30,3 +30,73 @@ for i in range(4,6):
 ```
 
 **Picture**
+![Task1](https://github.com/ophwsjtu18/ohw21f/blob/608b7a53fbdff74d3dc2d8759b92fb400a1eeb7d/yzx/10.27/Task1.jpg)
+
+**Task 2**
+
+**Code**
+```python
+from mcpi.minecraft import Minecraft
+import time
+
+mc=Minecraft.create()
+pos=mc.player.getTilePos()
+print("player pos is",pos)
+
+def house(x0,y0,z0,L,W,H):
+   for x in range(L):
+       for z in range(W):
+           mc.setBlock(x0+x,y0,z0+z,41)
+   for x in range(L):
+       for y in range(H):
+           mc.setBlock(x0+x,y0+y,z0,22)
+           mc.setBlock(x0+x,y0+y,z0+W-1,22)
+   for z in range(W):
+       for y in range(H):
+           mc.setBlock(x0,y0+y,z0+z,22)
+           mc.setBlock(x0+L-1,y0+y,z0+z,22)
+   for x in range(L):
+       for z in range(W):
+           mc.setBlock(x0+x,y0+H,z0+z,20)   
+           
+house(pos.x,pos.y,pos.z,11,20,18)
+```
+
+**Picture**
+![Task2](https://github.com/ophwsjtu18/ohw21f/blob/608b7a53fbdff74d3dc2d8759b92fb400a1eeb7d/yzx/10.27/Task2.jpg)
+
+**Task 3**
+
+**Code**
+
+```python
+from mcpi.minecraft import Minecraft
+import time
+
+mc=Minecraft.create()
+pos=mc.player.getTilePos()
+print("player pos is",pos)
+
+def house(x0,y0,z0,L,W,H):
+   for x in range(L):
+       for z in range(W):
+           mc.setBlock(x0+x,y0,z0+z,41)
+   for x in range(L):
+       for y in range(H):
+           mc.setBlock(x0+x,y0+y,z0,21)
+           mc.setBlock(x0+x,y0+y,z0+W-1,22)
+   for z in range(W):
+       for y in range(H):
+           mc.setBlock(x0,y0+y,z0+z,21)
+           mc.setBlock(x0+L-1,y0+y,z0+z,22)
+   for x in range(L):
+       for z in range(W):
+           mc.setBlock(x0+x,y0+H,z0+z,20)    
+            
+house(pos.x,pos.y,pos.z,12,19,10)
+house(pos.x+20,pos.y,pos.z,7,10,13)
+house(pos.x+45,pos.y,pos.z,7,9,17)
+```
+
+**Picture**
+![Task3](https://github.com/ophwsjtu18/ohw21f/blob/608b7a53fbdff74d3dc2d8759b92fb400a1eeb7d/yzx/10.27/Task3.jpg)
