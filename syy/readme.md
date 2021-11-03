@@ -36,7 +36,7 @@ mc.setBlock(pos.x+5,pos.y+2,pos.z-1,0)
 
 ### 2
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/10272.PNG)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/10272.png)
 
 Code 
 ```python
