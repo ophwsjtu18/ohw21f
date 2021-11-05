@@ -1,3 +1,4 @@
+# assignment 2021/11/3
 ## code
 ```python
 import numpy as np
@@ -30,3 +31,5 @@ cv2.destroyAllWindows()
 ```
 
 ## result
+## video snapshot
+![](test.png)
