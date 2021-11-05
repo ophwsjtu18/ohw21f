@@ -37,4 +37,4 @@ cv2.destroyAllWindows()
 ```
 ## result
 具体见文件夹中视频文件
-![]()
+![](https://github.com/ophwsjtu18/ohw21f/blob/aca0777baaa3abfeaa91fa8f717876dcc05cd9f1/yqj/week8/frame.png)
