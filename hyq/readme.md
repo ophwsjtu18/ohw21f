@@ -157,3 +157,79 @@ for x in range(3):
 ```
 ![3](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/1.png?raw=true)
 ![4](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/2.png?raw=true)
+
+
+## 2021.11.07
+### HOMEWORK
+
+####  HW1
+```python
+import numpy as np
+import cv2
+
+cap = cv2.VideoCapture(0)
+ret,frame = cap.read()
+cap.release()
+
+cv2.imshow('frame',frame)
+cv2.imwrite('hw1.png',frame)
+#cv2.destroyAllWindows()
+```
+
+####  HW2
+```python
+import numpy as np
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+if cap.isOpened():
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter('video.avi',fourcc,20.0,(640,480))
+    while(1):
+        ret,frame = cap.read()
+        if ret==True:
+            out.write(frame)
+            cv2.imshow('frame',frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+
+        else:
+            break
+else:
+    print("The camera cannot be initialized!")
+
+cap.release()
+out.release()
+cv2.destroyAllWindows()
+```
+
+####  HW3
+```python
+import numpy as np
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+if cap.isOpened():
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter('video2.avi',fourcc,20.0,(1280,480))
+    while(1):
+        ret,frame1 = cap.read()
+        if ret==True:
+            frame2 = cv2.flip(frame1, 1)
+            framemix = np.hstack((frame1, frame2))
+            cv2.imshow('frame', framemix)
+            out.write(framemix)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+
+        else:
+            break
+else:
+    print("The camera cannot be initialized!")
+
+cap.release()
+out.release()
+cv2.destroyAllWindows()
+```
