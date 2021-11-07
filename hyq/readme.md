@@ -162,7 +162,7 @@ for x in range(3):
 ## 2021.11.07
 ### HOMEWORK
 
-####  HW1
+####  HW1 打开摄像头
 ```python
 import numpy as np
 import cv2
@@ -175,8 +175,9 @@ cv2.imshow('frame',frame)
 cv2.imwrite('hw1.png',frame)
 #cv2.destroyAllWindows()
 ```
+![110701](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/hw1.png?raw=true)
 
-####  HW2
+####  HW2 用while True
 ```python
 import numpy as np
 import cv2
@@ -203,8 +204,10 @@ cap.release()
 out.release()
 cv2.destroyAllWindows()
 ```
+MP4 FILE:
+https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/video_Trim.mp4?raw=true
 
-####  HW3
+####  HW3 opencv clip左右镜像
 ```python
 import numpy as np
 import cv2
@@ -233,3 +236,5 @@ cap.release()
 out.release()
 cv2.destroyAllWindows()
 ```
+![110703](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/video2_Moment.jpg?raw=true)
+
