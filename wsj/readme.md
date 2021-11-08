@@ -24,3 +24,4 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 ### 效果图
+
