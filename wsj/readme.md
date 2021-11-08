@@ -15,7 +15,7 @@ while(flag):
     k=cv2.waitKey(1)&0xFF
     if k==ord('s'):    #按下s键，进入下面的保存图片操作
         cv2.imwrite(str(index)+".jpg",frame)
-        cv2.imwrite("fan"+str(index)+".jpg",frame)
+        cv2.imwrite("fan"+str(index)+".jpg",h_frame)
         print("save tupian successfully!")
         index+=1
     elif k==ord('q'):  #按下q键，程序退出
@@ -24,4 +24,5 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 ### 效果图
-
+![sdsd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/1.jpg)
+![sd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/fan1.jpg)
