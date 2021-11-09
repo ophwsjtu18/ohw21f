@@ -1,9 +1,9 @@
 # Assignments 10/27
 *Adiricast*
-## HOMEWORK 2
+## HOMEWORK 3
 ### 1
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/10271.png)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11301.png)
 
 Code 
 ```python
@@ -36,39 +36,70 @@ mc.setBlock(pos.x+5,pos.y+2,pos.z-1,0)
 
 ### 2
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/10272.png)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11302.png)
 
 Code 
 ```python
-from mcpi.minecraft import Minecraft
-import time
-mc=Minecraft.create()
-def house(x0,y0,z0,L,W,H):
-    mc.player.setTilePos(x0+1,y0+1,z0+1)
-    for x in range(L):
-        for z in range(W):
-            mc.setBlock(x0+x,y0,z0+z,126)
-            mc.setBlock(x0+x,y0+H,z0+z,20)
+import numpy as np
+import cv2
 
-    for x in range(L+2):
-        for y in range(H+1):
-            mc.setBlock(x0+x-1,y0+y,z0-1,46)
-            mc.setBlock(x0+x-1,y0+y,z0+W,46)
-    for z in range(W+2):
-        for y in range(H+1):
-            mc.setBlock(x0-1,y0+y,z0+z-1,46)
-            mc.setBlock(x0+L,y0+y,z0+z-1,46)
-    for z in range(2):
-        for y in range(2):
-            mc.setBlock(x0-1,y0+y+int((H-1)/2),z0+z+int((W-1)/2),20)
-    mc.setBlock(x0+int((L-1)/2),y0+1,z0-1,0)
-    mc.setBlock(x0+int((L-1)/2),y0+2,z0-1,0)
+cap = cv2.VideoCapture(0)
+
+if cap.isOpened():
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    video = cv2.VideoWriter('video.avi',fourcc,20.0,(1920,1080))
+    while(1):
+        ret,frame = cap.read()
+        if ret==True:
+           
+             video.write(frame) 
+             cv2.imshow('frame',frame)
+             if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+
+        else:
+            break
 
 
-house(1,60,40,10,10,10)
-house(30,60,40,10,10,7)
-house(50,60,40,6,7,8)
+cap.release()
+video.release()
+cv2.destroyAllWindows()
 
 ```
+### 3
+## 实现效果图
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11303.png)
+
+Code 
+```python
+import numpy as np
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+if cap.isOpened():
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    video = cv2.VideoWriter('video.avi',fourcc,20.0,(1920,1080))
+    while(1):
+        ret,frame = cap.read()
+        if ret==True:
+             frameflip = cv2.flip(frame,1)
+             frameflix=np.hstack((frame,frameflip))
+
+             video.write(frameflip) 
+             cv2.imshow('frame',frameflix)
+             if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+
+        else:
+            break
+
+
+cap.release()
+video.release()
+cv2.destroyAllWindows()
+
+```
+
 
 
