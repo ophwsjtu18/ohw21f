@@ -22,7 +22,7 @@ cv2.imwrite('cam.png',frame)
 
 ### 2
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11302.png)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11032.PNG)
 
 Code 
 ```python
@@ -54,7 +54,7 @@ cv2.destroyAllWindows()
 ```
 ### 3
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11303.png)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11033.PNG)
 
 Code 
 ```python
