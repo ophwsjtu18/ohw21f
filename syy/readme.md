@@ -3,34 +3,20 @@
 ## HOMEWORK 3
 ### 1
 ## 实现效果图
-![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11301.png)
+![me](https://github.com/ophwsjtu18/ohw21f/blob/main/syy/11031.PNG)
 
 Code 
 ```python
-from mcpi.minecraft import Minecraft
-import time
+import numpy as np
+import cv2
 
+cap = cv2.VideoCapture(0)
+ret,frame = cap.read()
+cap.release()
 
-mc=Minecraft.create()
-pos=mc.player.getTilePos()
-
-for x in range(10):
-    for z in range(10):
-        mc.setBlock(pos.x+x,pos.y,pos.z+z,126)
-        mc.setBlock(pos.x+x,pos.y+6,pos.z+z,126)
-
-for x in range(12):
-    for y in range(7):
-        mc.setBlock(pos.x+x-1,pos.y+y,pos.z-1,46)
-        mc.setBlock(pos.x+x-1,pos.y+y,pos.z+10,46)
-        mc.setBlock(pos.x-1,pos.y+y,pos.z+x-1,46)
-        mc.setBlock(pos.x+10,pos.y+y,pos.z+x-1,46)
-for z in range(2):
-    for y in range(2):
-        mc.setBlock(pos.x-1,pos.y+y+2,pos.z+z+4,20)
-mc.setBlock(pos.x+5,pos.y+1,pos.z-1,0)
-mc.setBlock(pos.x+5,pos.y+2,pos.z-1,0)
-
+cv2.imshow('cam',frame)
+cv2.imwrite('cam.png',frame)
+#cv2.destroyAllWindows()
 
 ```
 
