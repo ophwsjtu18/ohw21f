@@ -34,3 +34,7 @@ cv2.destroyAllWindows()
 2.Press ESC to exit the program
 
 **Picture**
+
+![Picture1](https://github.com/ophwsjtu18/ohw21f/blob/e44ccfe58dc2e173c8215b8975548b84c68e2ae3/yzx/11.3/picture1.jpg)
+
+![Picture2](https://github.com/ophwsjtu18/ohw21f/blob/e44ccfe58dc2e173c8215b8975548b84c68e2ae3/yzx/11.3/picture2.jpg)
