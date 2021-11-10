@@ -42,7 +42,7 @@ cv2.destroyAllWindows()
 
 ```
 ![20211013-1](/wuya/20211013-1.png)
-
+    
 </details>
 
 ### 20211020
@@ -175,7 +175,7 @@ while(1):
     time.sleep(0.5)
 ```
 ![20211027](/wuya/20211027.png)
-
+    
 </details>
 
 ### 20211103
