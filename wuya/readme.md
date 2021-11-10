@@ -1,6 +1,9 @@
 # ohw21f
 
 ## chapter 1
+<details>
+    <summary>Unfold</summary>
+
 Open Source Hardware
 
 ### chapter 1.1
@@ -18,9 +21,14 @@ Markdown
 
 ![A Picture](/wuya/4k纯黑.png)
 
+</details>
+    
 ## 第二章 作业
 
 ### 202111013
+<details>
+    <summary>展开</summary>
+
 ```python
 import cv2
 img=cv2.imread("xixihaha.jpg",cv2.IMREAD_UNCHANGED)
@@ -35,7 +43,12 @@ cv2.destroyAllWindows()
 ```
 ![20211013-1](/wuya/20211013-1.png)
 
+</details>
+
 ### 20211020
+<details>
+    <summary>展开</summary>
+    
 #### 20211020-2
 ```python
 import cv2
@@ -81,7 +94,12 @@ cv2.destroyAllWindows()
 ```
 ![20211020-3](/wuya/20211020-3.png)
 
+</details>
+
 ### 20211027
+<details>
+    <summary>展开</summary>
+    
 ```python
 from mcpi.minecraft import Minecraft
 import time
@@ -158,7 +176,12 @@ while(1):
 ```
 ![20211027](/wuya/20211027.png)
 
+</details>
+
 ### 20211103
+<details>
+<summary>展开</summary>
+    
 ```python
 import cv2
 import numpy as np
@@ -182,3 +205,5 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 ![20211103](/wuya/20211103.png)
+    
+</details>
