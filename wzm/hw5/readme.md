@@ -103,5 +103,5 @@ cv2.destroyAllWindows()
 cap.release()
 ```
 ## result
-![]()
+![](yolo截图.png)
 ## 录屏文件见上传文件
