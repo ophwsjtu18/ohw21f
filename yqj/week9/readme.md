@@ -109,4 +109,4 @@ cap.release()
 ```
 ## result
 具体见文件夹中视频文件
-![](sth.jpg)
+![](hw_yolo.png)
