@@ -355,3 +355,5 @@ cv2.destroyAllWindows()
 ```
 
 #### 效果视频
+MP4 FILE:
+https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/video_yolo.mp4?raw=true
