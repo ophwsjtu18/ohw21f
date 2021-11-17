@@ -127,4 +127,4 @@ cv2.destroyAllWindows()
 ![sdss](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/1117.jpg)
 
 ## 任务二
-[ppt](
+[ppt](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/1117.pptx)
