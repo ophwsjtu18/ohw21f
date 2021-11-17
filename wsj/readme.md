@@ -124,4 +124,7 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 ### 效果图
-![sdss](
+![sdss](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/1117.jpg)
+
+## 任务二
+[ppt](
