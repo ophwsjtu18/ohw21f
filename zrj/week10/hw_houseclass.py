@@ -25,7 +25,7 @@ class House(object):
         for i in range(self.w+2):
             for j in range(self.h):
                 mc.setBlock(self.x-1,self.y+j,self.z+i-1,49)
-                mc.setBlock(self.x+l,self.y+j,self.z+i-1,49)
+                mc.setBlock(self.x+self.l,self.y+j,self.z+i-1,49)
         for i in range(self.l):
             for j in range(self.w):
                 mc.setBlock(self.x+i,self.y+self.h-1,self.z+j,20)
@@ -33,14 +33,14 @@ class House(object):
             for j in range(2):
                 mc.setBlock(self.x-1,self.y+self.h/2-i,self.z+self.w/2-j,20)
         for i in range(2):
-            mc.setBlock(self.x+l/2,self.y+i+1,self.z-1,0)
+            mc.setBlock(self.x+self.l/2,self.y+i+1,self.z-1,0)
 
 x=pos.x
 y=pos.y
 z=pos.z
-l=[10,12,15]
-w=[12,15,15]
-h=[6,9,9]
-for i in range(2):
-    MChouse=House(x,y,z,l[i],w[i],h[i])
-    MChouse.createhouse()
+MChouse0=House(x,y,z,5,6,7)
+MChouse0.createhouse()
+MChouse1=House(x+10,y+10,z+10,4,6,8)
+MChouse1.createhouse()
+MChouse2=House(x+20,y+20,z+20,3,4,5)
+MChouse2.createhouse()
