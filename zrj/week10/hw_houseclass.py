@@ -42,5 +42,5 @@ l=[10,12,15]
 w=[12,15,15]
 h=[6,9,9]
 for i in range(2):
-    MChouse=house(x,y,z,l[i],w[i],h[i])
+    MChouse=House(x,y,z,l[i],w[i],h[i])
     MChouse.createhouse()
