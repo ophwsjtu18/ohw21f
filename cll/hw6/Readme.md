@@ -61,4 +61,4 @@ class house():
 ```
 ## Output
 ### Q2
-<img src="https://github.com/ophwsjtu18/ohw21f/blob/main/cll/hw3/minecraft%E6%88%BF%E5%AD%902.2.png"  width= "50%"  alt="Q2" align=center />
+<img src="https://github.com/ophwsjtu18/ohw21f/blob/main/cll/hw6/minecraft房子2.2.png"  width= "50%"  alt="Q2" align=center />
