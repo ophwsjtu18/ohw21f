@@ -47,4 +47,4 @@ house3.buildhouse(4,5,10)
 ```
 
 ### 效果图
-![]()
+![](houseclass.png)
