@@ -127,3 +127,4 @@ cv2.destroyAllWindows()
 ![ssd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/11.10/1117.jpg)
 
 ## 任务二
+[ppt](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/11.10/1117.pptx)
