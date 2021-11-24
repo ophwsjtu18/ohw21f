@@ -118,5 +118,14 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
+**Note**
+
+Because the response time in Minecraft is too long, I output the read data so that I can know the direction of the character in Minecraft based on the output data.
+
 **Picture**
 
+![yolovminecraft](https://github.com/ophwsjtu18/ohw21f/blob/04538edaeda27c611cd6a50d95a24b533078bb71/yzx/11.10/yolovminecraft.jpg)
+
+**Task2**
+
+This is the link to the PPT of RISC-V(https://github.com/ophwsjtu18/ohw21f/blob/04538edaeda27c611cd6a50d95a24b533078bb71/yzx/11.10/RISC-V.pptx)
