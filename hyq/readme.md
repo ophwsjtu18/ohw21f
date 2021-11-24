@@ -357,3 +357,109 @@ cv2.destroyAllWindows()
 #### 效果视频
 MP4 FILE:
 https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/video_yolo.mp4?raw=true
+
+## 2021.11.24 
+### HOMEWORK
+
+####  HW1
+```python
+from mcpi.minecraft import Minecraft
+import mcpi.block as block
+
+class House:
+    def __init__(self,x,y,z,L,W,H):
+        self.mc = Minecraft.create()
+        self.posx = x
+        self.posy = y
+        self.posz = z
+        self.L = L
+        self.W = W
+        self.H = H
+        
+    def build(self):
+        for x in range(self.L):
+            for z in range(self.W):
+                self.mc.setBlock(self.posx+x,self.posy,self.posz+z,block.WOODEN_SLAB.id)
+                self.mc.setBlock(self.posx+x,self.posy+self.H,self.posz+z,block.GLASS.id)
+    
+        for x in range(self.L+2):
+            for y in range(self.H+1):
+                self.mc.setBlock(self.posx+x-1,self.posy+y,self.posz-1,block.DIAMOND_BLOCK.id)
+                self.mc.setBlock(self.posx+x-1,self.posy+y,self.posz+self.W,block.DIAMOND_BLOCK.id)
+        for z in range(self.W+2):
+            for y in range(self.H+1):
+                self.mc.setBlock(self.posx-1,self.posy+y,self.posz+z-1,block.DIAMOND_BLOCK.id)
+                self.mc.setBlock(self.posx+self.L,self.posy+y,self.posz+z-1,block.DIAMOND_BLOCK.id)
+        for z in range(2):
+            for y in range(2):
+                self.mc.setBlock(self.posx-1,self.posy+y+int((self.H-1)/2),self.posz+z+int((self.W-1)/2),20)
+        self.mc.setBlock(self.posx+int((self.L-1)/2),self.posy+1,self.posz-1,0)
+        self.mc.setBlock(self.posx+int((self.L-1)/2),self.posy+2,self.posz-1,0)
+    
+    def gohome(self):
+        self.mc.player.setTilePos(self.posx+1,self.posy+1,self.posz+1)
+        
+house1 = House(100,20,100,10,10,10)
+house1.build()
+house1.gohome()
+```
+
+#### 效果图
+![1](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/hw6-1.png?raw=true)
+
+####  HW2
+```python
+from mcpi.minecraft import Minecraft
+import mcpi.block as block
+
+class House:
+    def __init__(self,x,y,z,L,W,H):
+        self.mc = Minecraft.create()
+        self.posx = x
+        self.posy = y
+        self.posz = z
+        self.L = L
+        self.W = W
+        self.H = H
+        
+    def build(self):
+        for x in range(self.L):
+            for z in range(self.W):
+                self.mc.setBlock(self.posx+x,self.posy,self.posz+z,block.WOODEN_SLAB.id)
+                self.mc.setBlock(self.posx+x,self.posy+self.H,self.posz+z,block.GLASS.id)
+    
+        for x in range(self.L+2):
+            for y in range(self.H+1):
+                self.mc.setBlock(self.posx+x-1,self.posy+y,self.posz-1,block.DIAMOND_BLOCK.id)
+                self.mc.setBlock(self.posx+x-1,self.posy+y,self.posz+self.W,block.DIAMOND_BLOCK.id)
+        for z in range(self.W+2):
+            for y in range(self.H+1):
+                self.mc.setBlock(self.posx-1,self.posy+y,self.posz+z-1,block.DIAMOND_BLOCK.id)
+                self.mc.setBlock(self.posx+self.L,self.posy+y,self.posz+z-1,block.DIAMOND_BLOCK.id)
+        for z in range(2):
+            for y in range(2):
+                self.mc.setBlock(self.posx-1,self.posy+y+int((self.H-1)/2),self.posz+z+int((self.W-1)/2),20)
+        self.mc.setBlock(self.posx+int((self.L-1)/2),self.posy+1,self.posz-1,0)
+        self.mc.setBlock(self.posx+int((self.L-1)/2),self.posy+2,self.posz-1,0)
+    
+    def gohome(self):
+        self.mc.player.setTilePos(self.posx+1,self.posy+1,self.posz+1)
+        
+house1 = House(100,20,100,10,10,10)
+house2 = House(200,20,200,20,20,5)
+house3 = House(300,20,300,5,20,20)
+
+house1.build()
+house2.build()
+house3.build()
+
+#house1.gohome()
+#house2.gohome()
+house3.gohome()
+```
+
+#### 效果图
+![1](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/hw6-2_1.png?raw=true)
+![2](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/hw6-2_2.png?raw=true)
+![3](https://github.com/ophwsjtu18/ohw21f/blob/main/hyq/hw6-2_3.png?raw=true)
+
