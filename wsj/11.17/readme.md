@@ -50,3 +50,4 @@ op2.buildhouse()
 op3.buildhouse()
 ```
 ### 效果图
+![sdd](https://github.com/ophwsjtu18/ohw21f/blob/main/wsj/11.17/11.17.jpg)
